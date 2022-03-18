@@ -29,7 +29,7 @@ public class MessageListenerExample extends ListenerAdapter
         //We construct a builder for our bot.
         try
         {
-            JDA jda = JDABuilder.createDefault("OTUzNTk4MzkwNjMyMDgzNDY2.YjG5tQ.v33iGM7lPZ5DsFc4gkZJ9Oh8mIw") // The token of the account that is logging in.
+            JDA jda = JDABuilder.createDefault("Token") // The token of the account that is logging in.
                     .addEventListeners(new MessageListenerExample())   // An instance of a class that will handle events.
                     .setMemberCachePolicy(MemberCachePolicy.ALL)
                     .enableCache(CacheFlag.ONLINE_STATUS,CacheFlag.ACTIVITY)
